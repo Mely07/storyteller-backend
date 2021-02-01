@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
         render json: { status: 201, user: user, logged_in: true}
 
       else
-        render json: { status: 401, message: 'User not found or password incorrect'}
+        render json: { status: 401, message: 'user not found or password incorrect'}
       end
     end
 
